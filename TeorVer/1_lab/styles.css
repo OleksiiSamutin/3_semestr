@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    text-align: center;
+    font-size: 20px;
+
+  }
+
+  .block {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    margin: 5px;
+    border: 1px solid black;
+    box-shadow: -4px 6px 16px -3px rgba(0, 0, 0, 0.75);
+  }
+
+  .result {
+    background-color: yellow;
+  }
+
+  .false {
+    background-color: red;
+  }
+
+  .falseText::before {
+    content: '❌';
+
+  }
+
+  .true {
+    background-color: green;
+  }
+
+  .trueText::before {
+    content: '✔️';
+  }
+
+  #button {
+    /* default for <button>, but useful for <a> */
+
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+
+    /* create a small space when buttons wrap on 2 lines */
+    margin: 2px 0;
+
+    /* invisible border (will be colored on hover/focus) */
+    border: solid 1px transparent;
+    border-radius: 4px;
+
+    /* size comes from text & padding (no width/height) */
+    padding: 0.5em 1em;
+
+    /* make sure colors have enough contrast! */
+    color: #ffffff;
+    background-color: #9555af;
+  }
+
+  #button:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+
+  #button:hover {
+    color: #9555af;
+    border-color: currentColor;
+    background-color: white;
+  }
+
+  #button:hover,
+  #button:focus {
+    color: #9555af;
+    border-color: currentColor;
+    background-color: white;
+  }

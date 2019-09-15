@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>FirstLab</title>
+
+</head>
+<body>
+    <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+        <label for="rangeForm">Quantity of iteration</label>
+        <input name="flevel" id="rangeForm" type="range" min="10" max="100000" value="100">
+        <output for="rangeForm" name="level" id="out">10</output>/100000
+        <button type="button" id = "button">Get Value</button>
+      </form>
+      <p>
+        Probability
+      </p>
+      <p class="block result">
+
+      </p>
+      <p class="falseText">
+        False result
+      </p>
+      <p class="block false">
+
+      </p>
+      <p class="trueText">
+        True result
+      </p>
+      <p class="block true">
+
+      </p>
+      <script src="main.js"></script>
+</body>
+</html>
